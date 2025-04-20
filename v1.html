@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokédex V1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Escolha um Pokémon</h1>
+    <select id="pokemonSelectV1"></select>
+    <button onclick="handleSelectV1()">Buscar</button>
+    <div class="pokemon-info" id="pokemonInfoV1"></div>
+
+    <script src="script.js"></script>
+    <script>
+      loadPokemonList("pokemonSelectV1");
+      function handleSelectV1() {
+        const selected = document.getElementById("pokemonSelectV1").value;
+        showPokemonInfo(selected, "pokemonInfoV1");
+      }
+    </script>
+  </body>
+</html>

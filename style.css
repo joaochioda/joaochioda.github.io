@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+select,
+button {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.pokemon-info {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 200px;
+}
